@@ -148,6 +148,10 @@
 
 hr {
   border-color: var(--gray-color-2);
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
 }
 
 .container {
@@ -180,12 +184,17 @@ hr {
 .product-detail-images hr {
   width: 555px;
   border-color: var(--gray-color-2);
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
 }
 
 .product-detail-variety {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   margin-top: 44px;
+  margin-left: 20px;
 }
 
 .product-detail-description {
@@ -198,7 +207,7 @@ hr {
   font-weight: 400;
   color: var(--gray-color-2);
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .product-detail-description-price {
@@ -220,7 +229,7 @@ hr {
   font-weight: bold;
   color: var(--gray-color-2);
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -308,8 +317,12 @@ hr {
 }
 
 .product-detail-info hr {
-  border-color: var(--gray-color-2);
   margin: 11px 0 23px;
+  border-color: var(--gray-color-2);
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
 }
 
 .product-detail-info p {
@@ -376,9 +389,8 @@ hr {
 }
 
 .product-price {
-  font-family: var(--font-family-2);
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.25rem;
+  font-weight: bold;
   color: var(--primary-color);
   margin-top: 24px;
   margin-top: 30px;
@@ -424,8 +436,12 @@ hr {
 
 .footer-brand hr {
   width: 116px;
-  border-color: #666666;
   margin-top: 24px;
+  border-top-width: 0px;
+  border-bottom-width: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: var(--gray-color-2);
 }
 
 .footer-icons {
@@ -442,7 +458,7 @@ hr {
 
 .footer-group-links {
   width: 100%;
-  height: 165px;
+  height: 200px;
 }
 
 .footer-group-links h6 {
@@ -459,8 +475,12 @@ hr {
   color: var(--gray-color-2);
   text-transform: uppercase;
   list-style: none;
-  margin-top: 14px;
+  margin-top: 20px;
   padding: 0;
+}
+
+.footer-group-links li {
+  margin: 8px 0;
 }
 
 .footer-group-links p {
@@ -475,7 +495,6 @@ hr {
 }
 
 .footer-separator {
-  /* width: 100%; */
   border-color: var(--gray-color-7);
 }
 

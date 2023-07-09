@@ -18,7 +18,7 @@ export const AppBar = () => {
       <header className="appbar-header">
         <div>
           <div className="appbar-header-images">
-            <img src="./src/assets/dog.webp" alt="Dog" width={86} height={70} />
+            <img src="./src/assets/dog.webp" alt="Dog" width={60} height={70} />
             <img
               src="./src/assets/brand.webp"
               alt="Brand"
