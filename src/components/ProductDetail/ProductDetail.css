@@ -1,0 +1,13 @@
+/* Product Detail */
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .product-detail {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

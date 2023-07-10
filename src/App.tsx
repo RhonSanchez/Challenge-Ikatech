@@ -1,8 +1,7 @@
-import "./App.css";
-import { AppBar } from "./components/AppBar";
+import { AppBar } from "./components/AppBar/AppBar";
 import { AppFooter } from "./components/AppFooter";
 import { CompleteLookProducts } from "./components/CompleteLookProducts";
-import { ProductDetail } from "./components/ProductDetail";
+import { ProductDetail } from "./components/ProductDetail/ProductDetail";
 import { RecomendedProducts } from "./components/RecomendedProducts";
 
 function App() {
@@ -12,10 +11,10 @@ function App() {
       <hr />
       <main className="container">
         <ProductDetail />
-        <CompleteLookProducts />
-        <RecomendedProducts />
+        {/* <CompleteLookProducts />
+        <RecomendedProducts /> */}
       </main>
-      <AppFooter />
+      {/* <AppFooter /> */}
     </>
   );
 }

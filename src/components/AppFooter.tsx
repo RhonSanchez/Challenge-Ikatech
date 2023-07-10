@@ -1,4 +1,4 @@
-import { Search } from "./Search";
+import { Search } from "./Search/Search";
 import { FacebookIcon } from "./icons/FacebookIcon";
 import { InstagramIcon } from "./icons/InstagramIcon";
 

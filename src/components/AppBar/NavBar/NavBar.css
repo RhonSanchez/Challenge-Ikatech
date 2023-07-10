@@ -1,0 +1,41 @@
+/* NavBar */
+
+.navbar {
+  height: 20px;
+  padding: 0 10px;
+  background-color: var(--gray-color-1);
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  color: var(--gray-color-2);
+  font-size: 0.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 30px;
+    padding: 0 60px;
+  }
+
+  .navbar ul {
+    justify-content: end;
+  }
+
+  .navbar li {
+    font-size: 0.75rem;
+  }
+}

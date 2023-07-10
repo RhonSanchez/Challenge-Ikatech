@@ -1,4 +1,5 @@
-import { ArrowRightIcon } from "./icons/ArrowRightIcon";
+import { ArrowRightIcon } from "../icons/ArrowRightIcon";
+import "./Search.css";
 
 export const Search = ({ title = "" }) => {
   return (

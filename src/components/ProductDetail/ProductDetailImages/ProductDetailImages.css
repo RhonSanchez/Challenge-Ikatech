@@ -1,0 +1,130 @@
+/* ProductDetailImages */
+
+.product-detail-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail-images span {
+  font-weight: bold;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--gray-color-3);
+}
+
+.product-detail-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-detail-image-main {
+  width: 200px;
+  height: 160px;
+  margin-top: 33px;
+}
+
+.product-detail-images hr {
+  width: 100%;
+  border-color: var(--gray-color-2);
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.separator-one {
+  display: none;
+}
+
+.separator-two {
+  display: block;
+}
+
+.product-detail-variety {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.product-detail-variety img {
+  width: 34px;
+  height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-detail-images span {
+    font-size: 0.8rem;
+  }
+  .separator-one {
+    display: block;
+  }
+
+  .separator-two {
+    display: none;
+  }
+
+  .product-detail-main {
+    flex-direction: column;
+  }
+
+  .product-detail-variety {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .product-detail-variety img {
+    width: 45px;
+    height: 40px;
+  }
+  .product-detail-image-main {
+    width: 280px;
+    height: 230px;
+  }
+  .product-detail-images hr {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-detail-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-detail-images span {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--gray-color-3);
+  }
+
+  .product-detail-image-main {
+    width: 380px;
+    height: 340px;
+    margin-top: 33px;
+  }
+
+  .product-detail-images hr {
+    width: 500px;
+    border-color: var(--gray-color-2);
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+
+  .product-detail-variety {
+    display: flex;
+    gap: 12px;
+    margin-top: 44px;
+    margin-left: 20px;
+  }
+
+  .product-detail-variety img {
+    width: 54px;
+    height: 50px;
+  }
+}

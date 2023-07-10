@@ -1,4 +1,4 @@
-import { Btn } from "./Btn";
+import { Btn } from "./Btn/Btn";
 
 export const Product = ({ hideButton = false }) => {
   return (
