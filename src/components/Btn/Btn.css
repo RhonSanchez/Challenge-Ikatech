@@ -1,7 +1,7 @@
 /* Btn */
 
 .btn {
-  width: 240px;
+  width: 230px;
   height: 48px;
   border: none;
   color: var(--white-color);
@@ -14,6 +14,21 @@
 
 .btn-block {
   width: 100%;
-  height: 53px;
-  font-size: 1rem;
+  height: 45px;
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    width: 230px;
+    height: 30px;
+    border: none;
+    font-size: 0.7rem;
+  }
+
+  .btn-block {
+    width: 100%;
+    height: 53px;
+    font-size: 1rem;
+  }
 }

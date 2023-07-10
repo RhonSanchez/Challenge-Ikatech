@@ -1,4 +1,6 @@
-import { Btn } from "./Btn/Btn";
+import { Btn } from "../Btn/Btn";
+import { Separator } from "../Separator/Separator";
+import "./Products.css";
 
 export const Product = ({ hideButton = false }) => {
   return (
@@ -35,7 +37,7 @@ export const Product = ({ hideButton = false }) => {
           <h4 className="product-price">$00.000</h4>
         </div>
         {hideButton ? (
-          <hr className="product-separator" />
+          <Separator className="product-separator" />
         ) : (
           <Btn
             title="Agregar al carrito"

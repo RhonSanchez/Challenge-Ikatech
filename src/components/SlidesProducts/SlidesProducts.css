@@ -1,0 +1,35 @@
+/* SlidesProducts */
+
+.slides-products-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .slides-products-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .slides-products-container {
+    gap: 2%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slides-products-container {
+    gap: 3%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .slides-products-container {
+    gap: 2%;
+  }
+}

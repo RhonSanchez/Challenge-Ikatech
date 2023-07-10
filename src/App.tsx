@@ -1,20 +1,21 @@
 import { AppBar } from "./components/AppBar/AppBar";
-import { AppFooter } from "./components/AppFooter";
-import { CompleteLookProducts } from "./components/CompleteLookProducts";
+import { AppFooter } from "./components/AppFooter/AppFooter";
+import { CompleteLookProducts } from "./components/CompleteLookProducts/CompleteLookProducts";
 import { ProductDetail } from "./components/ProductDetail/ProductDetail";
-import { RecomendedProducts } from "./components/RecomendedProducts";
+import { RecomendedProducts } from "./components/RecomendedProducts/RecomendedProducts";
+import { Separator } from "./components/Separator/Separator";
 
 function App() {
   return (
     <>
       <AppBar />
-      <hr />
+      <Separator />
       <main className="container">
         <ProductDetail />
-        {/* <CompleteLookProducts />
-        <RecomendedProducts /> */}
+        <CompleteLookProducts />
+        <RecomendedProducts />
       </main>
-      {/* <AppFooter /> */}
+      <AppFooter />
     </>
   );
 }

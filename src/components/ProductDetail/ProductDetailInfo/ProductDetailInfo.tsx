@@ -1,3 +1,4 @@
+import { Separator } from "../../Separator/Separator";
 import "./ProductDetailInfo.css";
 
 export const ProductDetailInfo = () => {
@@ -5,7 +6,7 @@ export const ProductDetailInfo = () => {
     <section className="product-detail-info-container">
       <div className="product-detail-info">
         <h2>Detalles del producto</h2>
-        <hr />
+        <Separator />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida
           porttitor enim, ac sagittis lorem sagittis at. Mauris vitae mi in leo
@@ -19,7 +20,7 @@ export const ProductDetailInfo = () => {
       </div>
       <div className="product-detail-info">
         <h2>Tecnologías</h2>
-        <hr />
+        <Separator />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida
           porttitor enim, ac sagittis lorem sagittis at. Mauris vitae mi in leo

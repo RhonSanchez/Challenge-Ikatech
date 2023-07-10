@@ -19,11 +19,6 @@
 
 .product-detail-info hr {
   margin: 11px 0 23px;
-  border-color: var(--gray-color-2);
-  border-top-width: 0px;
-  border-bottom-width: 1px;
-  border-left-width: 0px;
-  border-right-width: 0px;
 }
 
 .product-detail-info p {
@@ -52,11 +47,6 @@
 
   .product-detail-info hr {
     margin: 11px 0 23px;
-    border-color: var(--gray-color-2);
-    border-top-width: 0px;
-    border-bottom-width: 1px;
-    border-left-width: 0px;
-    border-right-width: 0px;
   }
 
   .product-detail-info p {

@@ -1,4 +1,5 @@
-import { Product } from "./Product";
+import { SlidesProdcuts } from "../SlidesProducts/SlidesProdcuts";
+import "./CompleteLookProducts.css";
 
 export const CompleteLookProducts = () => {
   return (
@@ -7,12 +8,7 @@ export const CompleteLookProducts = () => {
         <div className="products-look-title">
           <h2>Completa tu look</h2>
         </div>
-        <div className="slides-products-container">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-        </div>
+        <SlidesProdcuts />
       </section>
     </>
   );

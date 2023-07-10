@@ -1,0 +1,30 @@
+/* ProductsLook */
+
+.products-look-title {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-color-6);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.products-look-title h2 {
+  font-family: var(--font-family-2);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--gray-color-4);
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .products-look-title {
+    height: 33px;
+    padding: 5px 7px;
+    margin-bottom: 8px;
+  }
+
+  .products-look-title h2 {
+    font-size: 1.25rem;
+  }
+}
