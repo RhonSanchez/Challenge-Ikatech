@@ -5,16 +5,16 @@ import "./ProductDetail.css";
 import { useState } from "react";
 
 const images = [
-  "./src/assets/10.jpg",
-  "./src/assets/11.jpg",
-  "./src/assets/13.jpg",
-  "./src/assets/14.jpg",
-  "./src/assets/15.jpg",
-  "./src/assets/16.jpg",
+  "./public/10.jpg",
+  "./public/11.jpg",
+  "./public/13.jpg",
+  "./public/14.jpg",
+  "./public/15.jpg",
+  "./public/16.jpg",
 ];
 
 export const ProductDetail = () => {
-  const [imageSeleted, setImageSeleted] = useState("./src/assets/1.jpg");
+  const [imageSeleted, setImageSeleted] = useState("./public/1.jpg");
 
   const selecImage = (image: string) => {
     setImageSeleted(image);

@@ -27,26 +27,26 @@ export const Product = ({
       <article className={isAdded ? "product isAdded" : "product"}>
         <div className="product-info">
           <img
-            src={`./src/assets/${product.foto}`}
+            src={`./public/${product.foto}`}
             alt="shoe"
             width={146}
             height={134}
           />
           <div className="prouduct-galery">
             <img
-              src={`./src/assets/${product.foto}`}
+              src={`./public/${product.foto}`}
               alt="shoe"
               width={40}
               height={37}
             />
             <img
-              src={`./src/assets/${product.foto}`}
+              src={`./public/${product.foto}`}
               alt="shoe"
               width={40}
               height={37}
             />
             <img
-              src={`./src/assets/${product.foto}`}
+              src={`./public/${product.foto}`}
               alt="shoe"
               width={40}
               height={37}
