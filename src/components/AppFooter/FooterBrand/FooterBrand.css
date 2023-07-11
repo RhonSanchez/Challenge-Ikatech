@@ -31,6 +31,10 @@
   margin-top: 10px;
 }
 
+.footer-icons svg {
+  fill: var(--gray-color-2);
+}
+
 @media screen and (min-width: 768px) {
   .footer-brand {
     height: 140px;
@@ -64,4 +68,27 @@
     gap: 35px;
     margin-top: 18px;
   }
+}
+
+/* Animations */
+
+/* Fade RRSS */
+
+.hvr-fade-rrss {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade-rrss:hover svg,
+.hvr-fade-rrss:focus svg,
+.hvr-fade-rrss:active svg {
+  background-color: var(--gray-color-7);
+  fill: var(--primary-color);
 }

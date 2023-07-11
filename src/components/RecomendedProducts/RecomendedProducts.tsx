@@ -1,9 +1,11 @@
 import { SlidesProdcuts } from "../SlidesProducts/SlidesProdcuts";
+import { Separator } from "../Separator/Separator";
+import { useProducts } from "../../hooks/useProduct";
 import "./RecomendedProducts.css";
 import "../ProductDetail/ProductDetailInfo/ProductDetailInfo.css";
-import { Separator } from "../Separator/Separator";
 
 export const RecomendedProducts = () => {
+  const { products } = useProducts();
   return (
     <>
       <section className="products-recomended">
@@ -11,7 +13,7 @@ export const RecomendedProducts = () => {
           <h2>Productos recomendados</h2>
           <Separator />
         </div>
-        <SlidesProdcuts hideButton />
+        <SlidesProdcuts products={products} hideButton />
       </section>
     </>
   );

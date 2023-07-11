@@ -8,9 +8,13 @@ export const FooterBrand = () => {
     <div className="footer-brand">
       <h6>@hushpuppiesco</h6>
       <Separator />
-      <div className="footer-icons">
-        <FacebookIcon />
-        <InstagramIcon />
+      <div className="footer-icons ">
+        <a className="hvr-fade-rrss" href="#">
+          <FacebookIcon />
+        </a>
+        <a className="hvr-fade-rrss" href="#">
+          <InstagramIcon />
+        </a>
       </div>
     </div>
   );

@@ -27,7 +27,8 @@
   margin-top: 6px;
 }
 
-.product-detail-description-text {
+.product-detail-description-text,
+.product-detail-description-text a {
   font-size: 0.7rem;
   font-weight: bold;
   color: var(--gray-color-2);
@@ -56,6 +57,10 @@
   gap: 10px;
 }
 
+.product-detail-description-sizes .isActive {
+  opacity: 0.5;
+}
+
 .product-detail-description-sizes div {
   width: 100%;
   height: 55px;
@@ -82,7 +87,29 @@
   margin-top: 32px;
 }
 
+.product-detail-description-actions.isAdded .btn {
+  background-color: var(--gray-color-2);
+}
+
+.product-detail-description-actions.isAdded .btn:hover {
+  background-color: var(--gray-color-1);
+}
+
 .product-detail-description-actions svg {
+  cursor: pointer;
+  fill: var(--gray-color-6);
+}
+
+.product-detail-description-actions svg:hover,
+.product-detail-description-actions .isFavorite svg:hover {
+  opacity: 0.8;
+}
+
+.product-detail-description-actions .isFavorite svg {
+  fill: var(--secondary-color);
+}
+
+.product-detail-description-text a {
   cursor: pointer;
 }
 
@@ -141,7 +168,8 @@
     margin-top: 6px;
   }
 
-  .product-detail-description-text {
+  .product-detail-description-text,
+  .product-detail-description-text a {
     font-size: 0.875rem;
     font-weight: bold;
     color: var(--gray-color-2);
@@ -202,4 +230,47 @@
     height: 48px;
     font-size: 0.875rem;
   }
+}
+
+/* Animations */
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: var(--primary-color);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: var(--primary-color);
+  }
+}
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-back-pulse:hover,
+.hvr-back-pulse:focus,
+.hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: var(--gray-color-2);
+  background-color: var(--gray-color-1);
+  color: white;
 }

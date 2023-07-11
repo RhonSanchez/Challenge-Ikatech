@@ -28,6 +28,7 @@
   width: 30px;
   height: 100%;
   color: var(--gray-color-2);
+  cursor: pointer;
 }
 
 .search-icon svg {

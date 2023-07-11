@@ -1,8 +1,11 @@
 import { Search } from "../../Search/Search";
 import { LockIcon } from "../../icons/LockIcon";
+import { useSelector } from "../../../store";
+import { selectCartLength } from "../../../store/cart/selector";
 import "./HeaderBar.css";
 
 export const HeaderBar = () => {
+  const cartLength = useSelector(selectCartLength);
   return (
     <header className="headerbar">
       <div>
@@ -20,11 +23,31 @@ export const HeaderBar = () => {
         </div>
         <nav>
           <ul>
-            <li>Hombre</li>
-            <li>Mujer</li>
-            <li>Blog</li>
-            <li>Hitoria</li>
-            <li>Tienda</li>
+            <li>
+              <a className="hvr-fade-links" href="#">
+                Hombre
+              </a>
+            </li>
+            <li>
+              <a className="hvr-fade-links" href="#">
+                Mujer
+              </a>
+            </li>
+            <li>
+              <a className="hvr-fade-links" href="#">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a className="hvr-fade-links" href="#">
+                Hitoria
+              </a>
+            </li>
+            <li>
+              <a className="hvr-fade-links" href="#">
+                Tienda
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -35,7 +58,7 @@ export const HeaderBar = () => {
         </span>
         <span className="headerbar-shopping">
           {" "}
-          <LockIcon /> Carrito 0
+          <LockIcon /> Carrito {cartLength}
         </span>
       </div>
     </header>

@@ -43,6 +43,18 @@
   margin-bottom: 20px;
 }
 
+.product-detail-variety .hvr-fade-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.product-detail-variety .hvr-fade-img:hover {
+  border: 1px solid var(--primary-color);
+}
+
 .product-detail-variety img {
   width: 34px;
   height: 30px;

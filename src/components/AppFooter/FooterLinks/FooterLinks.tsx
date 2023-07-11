@@ -7,24 +7,64 @@ export const FooterLinks = () => {
       <div className="footer-group-links">
         <h6>Servicio al cliente</h6>
         <ul>
-          <li>Contáctenos</li>
-          <li>Cambios y devoluciones</li>
-          <li>Políticas de la tienda</li>
-          <li>Políticas de datos</li>
+          <li>
+            {" "}
+            <a className="hvr-fade-links" href="#">
+              Contáctenos
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a className="hvr-fade-links" href="#">
+              Cambios y devoluciones
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a className="hvr-fade-links" href="#">
+              Políticas de la tienda
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a className="hvr-fade-links" href="#">
+              Políticas de datos
+            </a>
+          </li>
         </ul>
       </div>
       <div className="footer-group-links">
         <h6>Mi cuenta</h6>
         <ul>
-          <li>Mis pedidos</li>
-          <li>Mis devoluciones</li>
+          <li>
+            {" "}
+            <a className="hvr-fade-links" href="#">
+              Mis pedidos
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a className="hvr-fade-links" href="#">
+              Mis devoluciones
+            </a>
+          </li>
         </ul>
       </div>
       <div className="footer-group-links">
         <h6>Recursos</h6>
         <ul>
-          <li>Tiendas</li>
-          <li>Devoluciones</li>
+          <li>
+            {" "}
+            <a className="hvr-fade-links" href="#">
+              Tiendas
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a className="hvr-fade-links" href="#">
+              Devoluciones
+            </a>
+          </li>
         </ul>
       </div>
       <div className="footer-group-links">

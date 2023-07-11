@@ -4,9 +4,21 @@ export const NavBar = () => {
   return (
     <nav className="navbar">
       <ul>
-        <li>Directorio de tiendas</li>
-        <li>Servicio al cliente</li>
-        <li>Mi cuenta</li>
+        <li>
+          <a className="hvr-fade" href="#">
+            Directorio de tiendas
+          </a>
+        </li>
+        <li>
+          <a className="hvr-fade" href="#">
+            Servicio al cliente
+          </a>
+        </li>
+        <li>
+          <a className="hvr-fade" href="#">
+            Mi cuenta
+          </a>
+        </li>
       </ul>
     </nav>
   );

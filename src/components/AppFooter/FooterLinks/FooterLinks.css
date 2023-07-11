@@ -27,10 +27,15 @@
 
 .footer-group-links li {
   margin: 4px 0;
+  list-style: none;
+}
+
+.footer-group-links li a {
   font-size: 0.875rem;
   color: var(--gray-color-2);
   text-transform: uppercase;
-  list-style: none;
+
+  text-decoration: none;
 }
 
 .footer-group-links p {
@@ -62,8 +67,11 @@
   }
 
   .footer-group-links li {
-    font-size: 0.7rem;
     margin: 8px 0;
+  }
+
+  .footer-group-links li a {
+    font-size: 0.7rem;
   }
 
   .footer-group-links p {
@@ -91,8 +99,11 @@
   }
 
   .footer-group-links li {
-    font-size: 1rem;
     margin: 8px 0;
+  }
+
+  .footer-group-links li a {
+    font-size: 1rem;
   }
 
   .footer-group-links p {
