@@ -1,14 +1,15 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { ProductDTO } from "../../types/products";
 
 const initialState = {
-  cartItems: [],
+  cartItems: [] as ProductDTO[],
 };
 
 const useSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    setCart: (state, action) => {
+    setCart: (state, action: PayloadAction<ProductDTO>) => {
       state.cartItems = [...state.cartItems, action.payload];
     },
   },

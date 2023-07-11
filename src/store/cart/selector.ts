@@ -1,2 +1,5 @@
-export const selectCart = (state) => state.cart.cartItems;
-export const selectCartLength = (state) => state.cart.cartItems.length;
+import { RootState } from "../index";
+
+export const selectCart = (state: RootState) => state.cart.cartItems;
+export const selectCartLength = (state: RootState) =>
+  state.cart.cartItems.length;
