@@ -12,12 +12,12 @@ export const HeaderBar = () => {
         <div className="headerbar-images">
           <img
             className="headerbar-images-dog"
-            src="./public/dog.webp"
+            src="https://i.ibb.co/hg9bGr6/dog.webp"
             alt="Dog"
           />
           <img
             className="headerbar-images-brand"
-            src="./public/brand.webp"
+            src="https://i.ibb.co/PDr3jtF/brand.webp"
             alt="Brand"
           />
         </div>
